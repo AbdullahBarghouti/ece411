@@ -1,2 +1,2 @@
-# ece411
+# ECE411
 Practicum project for ECE 411
