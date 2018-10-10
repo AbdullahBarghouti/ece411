@@ -1,0 +1,23 @@
+Git commands:
+cd % Change directory
+ex: cd desktop
+
+cd e % Hit tab to get suggested locations that start with e
+
+Push to github:
+cd ECE322_Lab1
+git pull origin master % Do this first to ensure no conflict
+git add * % Adds all new files to Github
+git commit -m "Message explaining revision update"
+git push origin master
+
+
+Download from github:
+cd (insert desired download directory)
+git clone (insert web address of repository to download)
+
+dir % Prints to screen the current directory folders
+
+
+To sign in and save your login for github:
+git config --global credential.helper wincred
