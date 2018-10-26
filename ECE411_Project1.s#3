@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1119,6 +1119,16 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <text x="1.73" y="-2.178" size="1.016" layer="21" font="vector">A</text>
 <text x="-2.938" y="-2.178" size="1.016" layer="21" font="vector">K</text>
 </package>
+<package name="JUDCOSPST">
+<wire x1="-6.096" y1="6.096" x2="6.096" y2="6.096" width="0.127" layer="21"/>
+<wire x1="6.096" y1="6.096" x2="6.096" y2="-6.096" width="0.127" layer="21"/>
+<wire x1="6.096" y1="-6.096" x2="-6.096" y2="-6.096" width="0.127" layer="21"/>
+<wire x1="-6.096" y1="-6.096" x2="-6.096" y2="6.096" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="21"/>
+<pad name="T" x="-3.556" y="-8.128" drill="2"/>
+<pad name="P" x="3.556" y="-8.128" drill="2"/>
+<text x="-5.842" y="6.604" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -1231,6 +1241,24 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="SPST">
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.905" x2="-2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<text x="-4.445" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-1.905" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1653,6 +1681,23 @@ Source: http://www.osram.convergy.de/</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPST" prefix="S">
+<description>Judco 50-0015-00</description>
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JUDCOSPST">
+<connects>
+<connect gate="G$1" pin="P" pad="P"/>
+<connect gate="G$1" pin="S" pad="T"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9709,7 +9754,9 @@ DIN A3, landscape with location and doc. field</description>
 <parts>
 <part name="U$1" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X1" library="adafruit" deviceset="USB-A" device=""/>
+<part name="USB_PORT" library="adafruit" deviceset="USB-A" device="">
+<attribute name="SPICEPREFIX" value="X"/>
+</part>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1">
 <spice>
@@ -9774,6 +9821,8 @@ DIN A3, landscape with location and doc. field</description>
 </part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="S1" library="adafruit" deviceset="SPST" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9787,7 +9836,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="GND1" gate="1" x="-31.75" y="-1.27">
 <attribute name="VALUE" x="-34.29" y="-3.81" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="-95.25" y="50.8">
+<instance part="USB_PORT" gate="G$1" x="-95.25" y="50.8">
 <attribute name="NAME" x="-105.156" y="60.96" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-105.41" y="43.18" size="1.27" layer="96"/>
 </instance>
@@ -9870,6 +9919,10 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="LAST_DATE_TIME" x="166.37" y="-66.04" size="2.286" layer="94"/>
 <attribute name="SHEET" x="179.705" y="-71.12" size="2.54" layer="94"/>
 </instance>
+<instance part="S1" gate="G$1" x="-40.64" y="86.36" rot="R270"/>
+<instance part="GND7" gate="1" x="-45.72" y="78.74">
+<attribute name="VALUE" x="-48.26" y="76.2" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9898,7 +9951,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="-31.75" y="17.78"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="GND"/>
+<pinref part="USB_PORT" gate="G$1" pin="GND"/>
 <wire x1="-85.09" y1="48.26" x2="-83.82" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="48.26" x2="-83.82" y2="41.91" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
@@ -9932,6 +9985,11 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="82.55" y1="93.98" x2="82.55" y2="85.09" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="S1" gate="G$1" pin="P"/>
+<wire x1="-45.72" y1="81.28" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -9948,7 +10006,7 @@ DIN A3, landscape with location and doc. field</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="X1" gate="G$1" pin="D+"/>
+<pinref part="USB_PORT" gate="G$1" pin="D+"/>
 <wire x1="-76.2" y1="53.34" x2="-85.09" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9961,7 +10019,7 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="D-"/>
+<pinref part="USB_PORT" gate="G$1" pin="D-"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-85.09" y1="50.8" x2="-62.23" y2="50.8" width="0.1524" layer="91"/>
 </segment>
@@ -10083,6 +10141,13 @@ DIN A3, landscape with location and doc. field</description>
 </segment>
 <segment>
 <label x="50.8" y="97.79" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="S"/>
+<pinref part="U$1" gate="G$1" pin="/RESET"/>
+<wire x1="-35.56" y1="83.82" x2="-21.59" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
