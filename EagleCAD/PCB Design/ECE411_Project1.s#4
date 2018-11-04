@@ -11111,8 +11111,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22p"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22p"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="">
 <attribute name="VCC" value="5V"/>
@@ -11134,6 +11132,8 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7u"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 </parts>
 <sheets>
 <sheet>
@@ -11188,8 +11188,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <instance part="R4" gate="G$1" x="39.37" y="1.27" rot="R90"/>
 <instance part="LED2" gate="G$1" x="30.48" y="-10.16"/>
 <instance part="LED1" gate="G$1" x="39.37" y="-10.16"/>
-<instance part="C6" gate="G$1" x="-35.56" y="39.37" rot="R90"/>
-<instance part="C7" gate="G$1" x="-35.56" y="29.21" rot="R90"/>
 <instance part="GND14" gate="1" x="-38.1" y="24.13"/>
 <instance part="P+2" gate="VCC" x="-26.67" y="74.93">
 <attribute name="VALUE" x="-29.21" y="72.39" size="1.778" layer="96" rot="R90"/>
@@ -11213,6 +11211,8 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <instance part="C9" gate="G$1" x="48.26" y="129.54"/>
 <instance part="C10" gate="G$1" x="67.31" y="129.54"/>
 <instance part="C11" gate="G$1" x="67.31" y="107.95"/>
+<instance part="C6" gate="G$1" x="-35.56" y="39.37" rot="R90"/>
+<instance part="C7" gate="G$1" x="-35.56" y="29.21" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11290,12 +11290,12 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="39.37" x2="-38.1" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="29.21" x2="-38.1" y2="26.67" width="0.1524" layer="91"/>
-<junction x="-38.1" y="29.21"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<junction x="-38.1" y="29.21"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -11599,7 +11599,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <net name="N$20" class="0">
 <segment>
 <wire x1="-29.21" y1="29.21" x2="-26.67" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="29.21" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="29.21" x2="-30.48" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="XTAL2"/>
@@ -11607,12 +11606,12 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="-24.13" y1="30.48" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="1"/>
 <junction x="-26.67" y="29.21"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <wire x1="-24.13" y1="39.37" x2="-26.67" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="39.37" x2="-29.21" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="39.37" x2="-30.48" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="XTAL1"/>
@@ -11620,6 +11619,7 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="-24.13" y1="38.1" x2="-24.13" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="2"/>
 <junction x="-26.67" y="39.37"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$22" class="0">
