@@ -4614,7 +4614,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
-<package name="HPC0201" urn="urn:adsk.eagle:footprint:23195/1" library_version="3">
+<package name="HPC0201" urn="urn:adsk.eagle:footprint:25783/1" library_version="5">
 <description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
 Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
@@ -5739,7 +5739,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packageinstance name="R01005"/>
 </packageinstances>
 </package3d>
-<package3d name="HPC0201" urn="urn:adsk.eagle:package:23688/1" type="box" library_version="3">
+<package3d name="HPC0201" urn="urn:adsk.eagle:package:26213/1" type="box" library_version="5">
 <description> 
 Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <packageinstances>
@@ -6979,7 +6979,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </pinmapping>
 </spice>
 </deviceset>
-<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/42" prefix="C" uservalue="yes" library_version="3">
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/44" prefix="C" uservalue="yes" library_version="5">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
@@ -8027,7 +8027,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23688/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26213/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -11130,6 +11130,10 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <attribute name="VCC" value="5V"/>
 </part>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7u"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -11205,6 +11209,10 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <attribute name="VCC" x="74.93" y="139.7" size="1.778" layer="96"/>
 </instance>
 <instance part="GND15" gate="1" x="33.02" y="121.92"/>
+<instance part="C8" gate="G$1" x="48.26" y="107.95"/>
+<instance part="C9" gate="G$1" x="48.26" y="129.54"/>
+<instance part="C10" gate="G$1" x="67.31" y="129.54"/>
+<instance part="C11" gate="G$1" x="67.31" y="107.95"/>
 </instances>
 <busses>
 </busses>
@@ -11316,11 +11324,21 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="102.87" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="102.87" x2="58.42" y2="102.87" width="0.1524" layer="91"/>
+<junction x="58.42" y="102.87"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="102.87" x2="67.31" y2="102.87" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="124.46" x2="58.42" y2="123.19" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
+<junction x="58.42" y="124.46"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="124.46" x2="67.31" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
@@ -11434,9 +11452,12 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="66.04" y1="132.08" x2="74.93" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="132.08" x2="67.31" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="132.08" x2="74.93" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="132.08" x2="74.93" y2="135.89" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<junction x="67.31" y="132.08"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -11568,8 +11589,11 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="82.55" y1="58.42" x2="82.55" y2="110.49" width="0.1524" layer="91"/>
 <junction x="71.12" y="58.42"/>
 <pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="82.55" y1="110.49" x2="66.04" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="110.49" x2="67.31" y2="110.49" width="0.1524" layer="91"/>
 <label x="67.31" y="111.76" size="1.778" layer="95"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="67.31" y1="110.49" x2="66.04" y2="110.49" width="0.1524" layer="91"/>
+<junction x="67.31" y="110.49"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11604,10 +11628,16 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="U3" gate="G$1" pin="IN"/>
 <wire x1="30.48" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="43.18" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="110.49" x2="43.18" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="110.49" x2="48.26" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="110.49" x2="43.18" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="110.49" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
 <junction x="43.18" y="132.08"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<junction x="48.26" y="110.49"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<junction x="48.26" y="132.08"/>
 </segment>
 </net>
 </nets>
