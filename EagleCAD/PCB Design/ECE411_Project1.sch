@@ -8462,39 +8462,45 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="A3L-LOC" urn="urn:adsk.eagle:symbol:13881/1" library_version="1">
-<wire x1="288.29" y1="3.81" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="3.81" x2="373.38" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="373.38" y1="3.81" x2="383.54" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="383.54" y1="3.81" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="383.54" y1="8.89" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="383.54" y1="13.97" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="383.54" y1="19.05" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="288.29" y1="3.81" x2="288.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="288.29" y1="24.13" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="24.13" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="373.38" y1="3.81" x2="373.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="373.38" y1="8.89" x2="383.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="373.38" y1="8.89" x2="342.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="8.89" x2="342.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="8.89" x2="342.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="13.97" x2="383.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="13.97" x2="342.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="19.05" x2="383.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="342.265" y1="19.05" x2="342.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="344.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="344.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="357.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
+<symbol name="FRAME_A_L" urn="urn:adsk.eagle:symbol:13882/1" library_version="1">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" library_version="1">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="A3L-LOC" urn="urn:adsk.eagle:component:13942/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN A3, landscape with location and doc. field</description>
+<deviceset name="FRAME_A_L" urn="urn:adsk.eagle:component:13939/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
 <gates>
-<gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
@@ -10985,7 +10991,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SERVO2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="">
 <attribute name="VCC" value="5V"/>
@@ -11033,6 +11038,7 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 <part name="U4" library="DCBARREL_2.1MM" deviceset="DCJACK_2.1MM_PTH" device=""/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11054,11 +11060,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <attribute name="VALUE" x="78.74" y="67.31" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND6" gate="1" x="73.66" y="63.5"/>
-<instance part="FRAME1" gate="G$1" x="-177.8" y="-76.2">
-<attribute name="DRAWING_NAME" x="166.37" y="-60.96" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="166.37" y="-66.04" size="2.286" layer="94"/>
-<attribute name="SHEET" x="179.705" y="-71.12" size="2.54" layer="94"/>
-</instance>
 <instance part="GND7" gate="1" x="-45.72" y="78.74">
 <attribute name="VALUE" x="-48.26" y="76.2" size="1.778" layer="96"/>
 </instance>
@@ -11096,22 +11097,24 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <instance part="J1" gate="G$1" x="-96.52" y="50.8"/>
 <instance part="ISP1" gate="G$1" x="78.74" y="26.67"/>
 <instance part="U1" gate="G$1" x="-26.67" y="34.29" rot="R90"/>
-<instance part="U2" gate="G$1" x="58.42" y="110.49"/>
-<instance part="U3" gate="G$1" x="58.42" y="132.08"/>
-<instance part="GND9" gate="1" x="58.42" y="99.06"/>
-<instance part="GND10" gate="1" x="58.42" y="120.65"/>
-<instance part="P+4" gate="VCC" x="74.93" y="138.43">
-<attribute name="VALUE" x="72.39" y="135.89" size="1.778" layer="96" rot="R90"/>
-<attribute name="VCC" x="74.93" y="139.7" size="1.778" layer="96"/>
+<instance part="U2" gate="G$1" x="58.42" y="92.71"/>
+<instance part="U3" gate="G$1" x="58.42" y="114.3"/>
+<instance part="GND9" gate="1" x="58.42" y="82.55"/>
+<instance part="GND10" gate="1" x="58.42" y="102.87"/>
+<instance part="P+4" gate="VCC" x="74.93" y="120.65">
+<attribute name="VALUE" x="72.39" y="118.11" size="1.778" layer="96" rot="R90"/>
+<attribute name="VCC" x="74.93" y="121.92" size="1.778" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="33.02" y="121.92"/>
-<instance part="C8" gate="G$1" x="48.26" y="107.95"/>
-<instance part="C9" gate="G$1" x="48.26" y="129.54"/>
-<instance part="C10" gate="G$1" x="67.31" y="129.54"/>
-<instance part="C11" gate="G$1" x="67.31" y="107.95"/>
+<instance part="GND15" gate="1" x="33.02" y="104.14"/>
+<instance part="C8" gate="G$1" x="48.26" y="90.17"/>
+<instance part="C9" gate="G$1" x="48.26" y="111.76"/>
+<instance part="C10" gate="G$1" x="67.31" y="111.76"/>
+<instance part="C11" gate="G$1" x="67.31" y="90.17"/>
 <instance part="C6" gate="G$1" x="-35.56" y="39.37" rot="R90"/>
 <instance part="C7" gate="G$1" x="-35.56" y="29.21" rot="R90"/>
-<instance part="U4" gate="G$1" x="26.67" y="129.54"/>
+<instance part="U4" gate="G$1" x="26.67" y="111.76"/>
+<instance part="FRAME2" gate="G$1" x="-120.65" y="-48.26"/>
+<instance part="FRAME2" gate="G$2" x="52.07" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -11221,32 +11224,28 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="102.87" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="102.87" x2="58.42" y2="102.87" width="0.1524" layer="91"/>
-<junction x="58.42" y="102.87"/>
+<wire x1="48.26" y1="85.09" x2="58.42" y2="85.09" width="0.1524" layer="91"/>
+<junction x="58.42" y="85.09"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="102.87" x2="67.31" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="85.09" x2="67.31" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="124.46" x2="58.42" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="106.68" x2="58.42" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
-<junction x="58.42" y="124.46"/>
+<wire x1="48.26" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
+<junction x="58.42" y="106.68"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="124.46" x2="67.31" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="106.68" x2="67.31" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="29.21" y1="129.54" x2="29.21" y2="127" width="0.1524" layer="91"/>
-<wire x1="29.21" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="109.22" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U4" gate="G$1" pin="GNDBREAK"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
-<junction x="29.21" y="127"/>
 </segment>
 </net>
 <net name="D+USB" class="0">
@@ -11279,7 +11278,7 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="UCAP" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="UCAP"/>
 <wire x1="-21.59" y1="48.26" x2="-30.48" y2="48.26" width="0.1524" layer="91"/>
@@ -11311,10 +11310,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 </segment>
 </net>
 <net name="VCC" class="0">
-<segment>
-<wire x1="97.79" y1="33.02" x2="97.79" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-</segment>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="-27.94" y1="101.6" x2="-27.94" y2="97.79" width="0.1524" layer="91"/>
@@ -11351,12 +11346,18 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="66.04" y1="132.08" x2="67.31" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="67.31" y1="132.08" x2="74.93" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="74.93" y1="132.08" x2="74.93" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="114.3" x2="67.31" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="114.3" x2="74.93" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="114.3" x2="74.93" y2="118.11" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<junction x="67.31" y="132.08"/>
+<junction x="67.31" y="114.3"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="VCC"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="93.98" y1="29.21" x2="97.79" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="97.79" y1="29.21" x2="97.79" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -11376,13 +11377,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <label x="33.02" y="48.26" size="1.778" layer="95"/>
 <pinref part="SERVO1" gate="A" pin="1"/>
 <wire x1="49.53" y1="71.12" x2="49.53" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="93.98" y1="29.21" x2="97.79" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="29.21" x2="97.79" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="ISP1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -11457,17 +11451,17 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <net name="/RST" class="0">
 <segment>
 <wire x1="66.04" y1="24.13" x2="62.23" y2="24.13" width="0.1524" layer="91"/>
-<label x="62.23" y="24.13" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="ISP1" gate="G$1" pin="RST"/>
-</segment>
-<segment>
+<wire x1="62.23" y1="24.13" x2="62.23" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="7.62" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="7.62" x2="109.22" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="130.81" x2="-15.24" y2="130.81" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="/RESET"/>
 <wire x1="-35.56" y1="83.82" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="83.82" x2="-21.59" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="95.25" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-22.86" y="83.82"/>
-<label x="-22.86" y="95.25" size="1.778" layer="95" xref="yes"/>
 <wire x1="-27.94" y1="87.63" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-27.94" y="83.82"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -11475,6 +11469,8 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="SW_RST" gate="G$1" pin="1"/>
 <wire x1="-35.56" y1="83.82" x2="-35.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-35.56" y="83.82"/>
+<wire x1="-15.24" y1="130.81" x2="-22.86" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="130.81" x2="-22.86" y2="95.25" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERVO_PWR" class="0">
@@ -11485,17 +11481,17 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="71.12" y1="71.12" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="58.42" x2="82.55" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="58.42" x2="82.55" y2="110.49" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="58.42" x2="82.55" y2="92.71" width="0.1524" layer="91"/>
 <junction x="71.12" y="58.42"/>
 <pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="82.55" y1="110.49" x2="67.31" y2="110.49" width="0.1524" layer="91"/>
-<label x="67.31" y="111.76" size="1.778" layer="95"/>
+<wire x1="82.55" y1="92.71" x2="67.31" y2="92.71" width="0.1524" layer="91"/>
+<label x="67.31" y="93.98" size="1.778" layer="95"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="67.31" y1="110.49" x2="66.04" y2="110.49" width="0.1524" layer="91"/>
-<junction x="67.31" y="110.49"/>
+<wire x1="67.31" y1="92.71" x2="66.04" y2="92.71" width="0.1524" layer="91"/>
+<junction x="67.31" y="92.71"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="XTAL2" class="0">
 <segment>
 <wire x1="-29.21" y1="29.21" x2="-26.67" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="29.21" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
@@ -11508,7 +11504,7 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="XTAL1" class="0">
 <segment>
 <wire x1="-24.13" y1="39.37" x2="-26.67" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="39.37" x2="-29.21" y2="39.37" width="0.1524" layer="91"/>
@@ -11521,27 +11517,36 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="UNREG_PWR" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="29.21" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="43.18" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="110.49" x2="48.26" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="110.49" x2="43.18" y2="110.49" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="110.49" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
-<junction x="43.18" y="132.08"/>
+<wire x1="43.18" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="92.71" x2="48.26" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="92.71" x2="43.18" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="92.71" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
+<junction x="43.18" y="114.3"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<junction x="48.26" y="110.49"/>
+<junction x="48.26" y="92.71"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<junction x="48.26" y="132.08"/>
+<junction x="48.26" y="114.3"/>
 <pinref part="U4" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,1,-86.36,55.88,J1,VBUS,,,,"/>
+<approved hash="104,1,29.21,132.08,U4,PWR,UNREG_PWR,,,"/>
+<approved hash="113,1,50.5739,72.4513,SERVO1,,,,,"/>
+<approved hash="113,1,69.6239,72.4513,SERVO2,,,,,"/>
+<approved hash="113,1,52.8894,19.2761,BUTTON_PAD,,,,,"/>
+<approved hash="113,1,30.8017,-11.43,LED2,,,,,"/>
+<approved hash="113,1,39.6917,-11.43,LED1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

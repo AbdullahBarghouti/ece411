@@ -8506,166 +8506,6 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
-<packages>
-<package name="DCJACK_2MM_PTH" urn="urn:adsk.eagle:footprint:6240083/1" library_version="2">
-<description>DJ Jack 2.0mm PTH Right-Angle</description>
-<wire x1="4.5" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0" x2="4.5" y2="3.3" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0" x2="-4.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3.3" x2="4.5" y2="8.4" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="14.2" x2="4.5" y2="13.1" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="14.2" x2="-2.6" y2="14.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="4.5" y2="3.3" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3.3" x2="4.5" y2="3.3" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="3.3" x2="-4.5" y2="12.45" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="12.45" x2="-4.5" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3.3" x2="4.5" y2="8.35" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="8.35" x2="4.5" y2="8.4" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="14.2" x2="2.65" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="14.2" x2="2.65" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="2.65" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="14.2" x2="4.5" y2="8.35" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="12.45" x2="4.4" y2="12.45" width="0.2032" layer="51"/>
-<pad name="PWR" x="0" y="13.6" drill="3.2"/>
-<pad name="GND" x="0" y="7.35" drill="2.8"/>
-<pad name="GNDBREAK" x="4.8" y="10.75" drill="2.8" rot="R90"/>
-<text x="-5.08" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.35" y="0" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-3.302" y="1.27" size="0.8128" layer="51">DC 2.0/2.1</text>
-</package>
-<package name="DCJACK_2MM_SMT" urn="urn:adsk.eagle:footprint:6240084/1" library_version="2">
-<description>2.0/2.1mm DC Jack - SMT
-&lt;p&gt;4UConnector: 03267&lt;/p&gt;
-&lt;p&gt;Note: Small tRestrict polygon's were added to the ground pads to improve solderability when this part is used in combination with a ground pour.  By default, Eagle will product four large bridges to the ground pour significantly increasing the heat distribution on the pads and preventing lead-free solder from reflowing in certain situations.  For more details, see: http://www.microbuilder.eu/Blog/09-12-14/Reducing_Thermals_for_Large_Pads_in_Eagle.aspx&lt;/p&gt;</description>
-<wire x1="-4" y1="4.5" x2="-5" y2="3.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-5" y1="3.5" x2="-5" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.5" x2="-4" y2="-4.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-4" y1="-4.5" x2="10.254" y2="-4.5" width="0.127" layer="51"/>
-<wire x1="10.254" y1="-4.5" x2="10.254" y2="-1.492" width="0.127" layer="51"/>
-<wire x1="10.254" y1="-1.492" x2="9" y2="-1.492" width="0.127" layer="51"/>
-<wire x1="9" y1="-1.492" x2="9" y2="4.5" width="0.127" layer="51"/>
-<wire x1="9" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="51"/>
-<wire x1="-4" y1="4.5" x2="-5" y2="3.5" width="0.127" layer="21" curve="90"/>
-<wire x1="-5" y1="3.5" x2="-5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-3.5" x2="-4" y2="-4.5" width="0.127" layer="21" curve="90"/>
-<wire x1="10.254" y1="-4.5" x2="10.254" y2="-1.492" width="0.127" layer="21"/>
-<wire x1="10.254" y1="-1.492" x2="9" y2="-1.492" width="0.127" layer="21"/>
-<wire x1="9" y1="-1.492" x2="9" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-1.668" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="21"/>
-<wire x1="4.682" y1="4.5" x2="1.588" y2="4.5" width="0.127" layer="21"/>
-<wire x1="9" y1="4.5" x2="7.938" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="-4.5" x2="-1.684" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="1.588" y1="-4.5" x2="4.666" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="7.938" y1="-4.5" x2="10.254" y2="-4.5" width="0.127" layer="21"/>
-<smd name="PWR1" x="0" y="5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="PWR2" x="6.2" y="5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="GNDBREAK" x="6.2" y="-5.5" dx="2.4" dy="2" layer="1"/>
-<smd name="GND" x="0" y="-5.5" dx="2.4" dy="2" layer="1"/>
-<text x="0.762" y="2.794" size="1.4224" layer="21" ratio="12" rot="R90">+</text>
-<text x="-1.016" y="-3.81" size="0.8128" layer="21">GND</text>
-<hole x="0" y="0" drill="1.6"/>
-<hole x="4.5" y="0" drill="1.8"/>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="1.27" y="-5.7404"/>
-<vertex x="1.27" y="-5.2578"/>
-<vertex x="1.2954" y="-5.2578"/>
-<vertex x="1.2954" y="-5.7404"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="-0.254" y="-4.4196"/>
-<vertex x="0.2286" y="-4.4196"/>
-<vertex x="0.2286" y="-4.445"/>
-<vertex x="-0.254" y="-4.445"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="4.9022" y="-5.7404"/>
-<vertex x="4.9022" y="-5.2578"/>
-<vertex x="4.9276" y="-5.2578"/>
-<vertex x="4.9276" y="-5.7404"/>
-</polygon>
-<polygon width="0.0254" layer="41" spacing="0.254">
-<vertex x="6.4262" y="-4.445"/>
-<vertex x="5.9436" y="-4.445"/>
-<vertex x="5.9436" y="-4.4196"/>
-<vertex x="6.4262" y="-4.4196"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="DCJACK_2MM_PTH" urn="urn:adsk.eagle:package:6240729/1" type="box" library_version="2">
-<description>DJ Jack 2.0mm PTH Right-Angle</description>
-<packageinstances>
-<packageinstance name="DCJACK_2MM_PTH"/>
-</packageinstances>
-</package3d>
-<package3d name="DCJACK_2MM_SMT" urn="urn:adsk.eagle:package:6240730/1" type="box" library_version="2">
-<description>2.0/2.1mm DC Jack - SMT
-&lt;p&gt;4UConnector: 03267&lt;/p&gt;
-&lt;p&gt;Note: Small tRestrict polygon's were added to the ground pads to improve solderability when this part is used in combination with a ground pour.  By default, Eagle will product four large bridges to the ground pour significantly increasing the heat distribution on the pads and preventing lead-free solder from reflowing in certain situations.  For more details, see: http://www.microbuilder.eu/Blog/09-12-14/Reducing_Thermals_for_Large_Pads_in_Eagle.aspx&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="DCJACK_2MM_SMT"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="DCBARREL" urn="urn:adsk.eagle:symbol:6239549/1" library_version="2">
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="3.175" x2="-4.445" y2="1.905" width="0.254" layer="94" curve="180"/>
-<wire x1="0" y1="1.905" x2="-4.445" y2="1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="3.175" x2="-4.445" y2="3.175" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="PWR" x="2.54" y="2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
-<pin name="GNDBREAK" x="2.54" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="2.54" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DCBARREL" urn="urn:adsk.eagle:component:6241039/1" prefix="CN" uservalue="yes" library_version="2">
-<description>&lt;p&gt;&lt;b&gt;2.0mm DC Barrel Jack&lt;/b&gt;&lt;/p&gt;
-&lt;b&gt;DCJACK_2MM_PTH&lt;/b&gt; - Through Hole Jack (4UConnector: 05537)</description>
-<gates>
-<gate name="G$1" symbol="DCBARREL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="DCJACK_2MM_PTH">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
-<connect gate="G$1" pin="PWR" pad="PWR"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240729/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMT" package="DCJACK_2MM_SMT">
-<connects>
-<connect gate="G$1" pin="GND" pad="GNDBREAK"/>
-<connect gate="G$1" pin="GNDBREAK" pad="GND"/>
-<connect gate="G$1" pin="PWR" pad="PWR1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240730/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="led" urn="urn:adsk.eagle:library:259">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
@@ -11067,6 +10907,65 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 </deviceset>
 </devicesets>
 </library>
+<library name="DCBARREL_2.1MM">
+<packages>
+<package name="DCJACK_2.1MM_PTH" urn="urn:adsk.eagle:footprint:6240083/1" locally_modified="yes">
+<description>DJ Jack 2.0mm PTH Right-Angle</description>
+<wire x1="4.5" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="14.2" x2="4.5" y2="13.1" width="0.2032" layer="21"/>
+<wire x1="2.65" y1="14.2" x2="2.4" y2="14.2" width="0.2032" layer="51"/>
+<pad name="PWR" x="0" y="13.9" drill="3.5"/>
+<pad name="GND" x="0" y="7.8" drill="3.5"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="3" rot="R90"/>
+<text x="-5.08" y="0" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.35" y="0" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-3.302" y="1.27" size="0.8128" layer="51">DC 2.0/2.1</text>
+<wire x1="-5" y1="0" x2="5" y2="0" width="0.1524" layer="51"/>
+<wire x1="5" y1="0" x2="5" y2="14" width="0.1524" layer="51"/>
+<wire x1="5" y1="14" x2="3" y2="14" width="0.1524" layer="51"/>
+<wire x1="3" y1="14" x2="-3" y2="14" width="0.1524" layer="51"/>
+<wire x1="-3" y1="14" x2="-5" y2="14" width="0.1524" layer="51"/>
+<wire x1="-5" y1="14" x2="-5" y2="0" width="0.1524" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DCBARREL">
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="3.175" x2="-4.445" y2="1.905" width="0.254" layer="94" curve="180"/>
+<wire x1="0" y1="1.905" x2="-4.445" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="3.175" x2="-4.445" y2="3.175" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PWR" x="2.54" y="2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="GNDBREAK" x="2.54" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="2.54" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DCJACK_2.1MM_PTH" prefix="U">
+<gates>
+<gate name="G$1" symbol="DCBARREL" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCJACK_2.1MM_PTH">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11111,17 +11010,14 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SMT1206" package3d_urn="urn:adsk.eagle:package:15796/1"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22p"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22p"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="">
 <attribute name="VCC" value="5V"/>
 </part>
-<part name="SW1" library="Push_Button" deviceset="FSM2JSMLTR" device=""/>
+<part name="SW_RST" library="Push_Button" deviceset="FSM2JSMLTR" device=""/>
 <part name="J1" library="USB_Micro_and_AVRISP" deviceset="0473460001_USBMICRO" device=""/>
 <part name="ISP1" library="USB_Micro_and_AVRISP" deviceset="AVRISP" device="-6"/>
 <part name="U1" library="Xtals" deviceset="ATS160SM-1" device=""/>
-<part name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="DCBARREL" device="SMT" package3d_urn="urn:adsk.eagle:package:6240730/1"/>
 <part name="U2" library="Regulators" deviceset="MIC29310-5.0WU" device=""/>
 <part name="U3" library="Regulators" deviceset="NCP5501DT50RKG" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11134,6 +11030,9 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7u"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
+<part name="U4" library="DCBARREL_2.1MM" deviceset="DCJACK_2.1MM_PTH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11188,18 +11087,15 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <instance part="R4" gate="G$1" x="39.37" y="1.27" rot="R90"/>
 <instance part="LED2" gate="G$1" x="30.48" y="-10.16"/>
 <instance part="LED1" gate="G$1" x="39.37" y="-10.16"/>
-<instance part="C6" gate="G$1" x="-35.56" y="39.37" rot="R90"/>
-<instance part="C7" gate="G$1" x="-35.56" y="29.21" rot="R90"/>
 <instance part="GND14" gate="1" x="-38.1" y="24.13"/>
 <instance part="P+2" gate="VCC" x="-26.67" y="74.93">
 <attribute name="VALUE" x="-29.21" y="72.39" size="1.778" layer="96" rot="R90"/>
 <attribute name="VCC" x="-26.67" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="SW1" gate="G$1" x="-40.64" y="86.36"/>
+<instance part="SW_RST" gate="G$1" x="-40.64" y="86.36"/>
 <instance part="J1" gate="G$1" x="-96.52" y="50.8"/>
 <instance part="ISP1" gate="G$1" x="78.74" y="26.67"/>
 <instance part="U1" gate="G$1" x="-26.67" y="34.29" rot="R90"/>
-<instance part="CN1" gate="G$1" x="27.94" y="129.54"/>
 <instance part="U2" gate="G$1" x="58.42" y="110.49"/>
 <instance part="U3" gate="G$1" x="58.42" y="132.08"/>
 <instance part="GND9" gate="1" x="58.42" y="99.06"/>
@@ -11213,6 +11109,9 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <instance part="C9" gate="G$1" x="48.26" y="129.54"/>
 <instance part="C10" gate="G$1" x="67.31" y="129.54"/>
 <instance part="C11" gate="G$1" x="67.31" y="107.95"/>
+<instance part="C6" gate="G$1" x="-35.56" y="39.37" rot="R90"/>
+<instance part="C7" gate="G$1" x="-35.56" y="29.21" rot="R90"/>
+<instance part="U4" gate="G$1" x="26.67" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -11258,8 +11157,8 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-45.72" y1="81.28" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="4"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="SW_RST" gate="G$1" pin="4"/>
+<pinref part="SW_RST" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="83.82" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-45.72" y="83.82"/>
 </segment>
@@ -11290,12 +11189,12 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="39.37" x2="-38.1" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="29.21" x2="-38.1" y2="26.67" width="0.1524" layer="91"/>
-<junction x="-38.1" y="29.21"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<junction x="-38.1" y="29.21"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -11341,37 +11240,37 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="58.42" y1="124.46" x2="67.31" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
-<pinref part="CN1" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="129.54" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="129.54" x2="29.21" y2="127" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="127" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
-<junction x="30.48" y="127"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GNDBREAK"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<junction x="29.21" y="127"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="D+USB" class="0">
 <segment>
 <wire x1="-77.47" y1="53.34" x2="-86.36" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="D+"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="D+MCU" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D+"/>
 <wire x1="-67.31" y1="53.34" x2="-21.59" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="D-USB" class="0">
 <segment>
 <wire x1="-86.36" y1="50.8" x2="-64.77" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="D-"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="D-MCU" class="0">
 <segment>
 <wire x1="-54.61" y1="50.8" x2="-29.21" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="50.8" x2="-29.21" y2="55.88" width="0.1524" layer="91"/>
@@ -11572,8 +11471,8 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="-27.94" y1="87.63" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-27.94" y="83.82"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="SW1" gate="G$1" pin="3"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="SW_RST" gate="G$1" pin="3"/>
+<pinref part="SW_RST" gate="G$1" pin="1"/>
 <wire x1="-35.56" y1="83.82" x2="-35.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-35.56" y="83.82"/>
 </segment>
@@ -11599,7 +11498,6 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <net name="N$20" class="0">
 <segment>
 <wire x1="-29.21" y1="29.21" x2="-26.67" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="29.21" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="29.21" x2="-30.48" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="XTAL2"/>
@@ -11607,12 +11505,12 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="-24.13" y1="30.48" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="1"/>
 <junction x="-26.67" y="29.21"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <wire x1="-24.13" y1="39.37" x2="-26.67" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="39.37" x2="-29.21" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="39.37" x2="-30.48" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="XTAL1"/>
@@ -11620,13 +11518,13 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <wire x1="-24.13" y1="38.1" x2="-24.13" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="2"/>
 <junction x="-26.67" y="39.37"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="PWR"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="30.48" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="IN"/>
 <wire x1="43.18" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
@@ -11638,6 +11536,7 @@ Datasheet: &lt;bold&gt;http://static6.arrow.com/aropdfconversion/ab7d7dcdfe3eb6b
 <junction x="48.26" y="110.49"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="48.26" y="132.08"/>
+<pinref part="U4" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 </nets>
