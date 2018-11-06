@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12141,8 +12141,8 @@ by exp-lbrs.ulp</description>
 <instance part="TP_D+" gate="G$1" x="-50.8" y="55.88" smashed="yes">
 <attribute name="NAME" x="-52.07" y="57.15" size="1.778" layer="95"/>
 </instance>
-<instance part="TP_D-" gate="G$1" x="-43.18" y="53.34" smashed="yes">
-<attribute name="NAME" x="-44.45" y="54.61" size="1.778" layer="95"/>
+<instance part="TP_D-" gate="G$1" x="-50.8" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="-49.53" y="46.99" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="TP_LED2" gate="G$1" x="33.02" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.29" y="8.89" size="1.778" layer="95" rot="R270"/>
@@ -12309,14 +12309,14 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="D-MCU" class="0">
 <segment>
-<wire x1="-54.61" y1="50.8" x2="-43.18" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="50.8" x2="-29.21" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-54.61" y1="50.8" x2="-50.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="50.8" x2="-29.21" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="50.8" x2="-29.21" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="D-"/>
 <wire x1="-29.21" y1="55.88" x2="-21.59" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="TP_D-" gate="G$1" pin="TP"/>
-<junction x="-43.18" y="50.8"/>
+<junction x="-50.8" y="50.8"/>
 </segment>
 </net>
 <net name="UCAP" class="0">
@@ -12599,8 +12599,12 @@ by exp-lbrs.ulp</description>
 </sheets>
 <errors>
 <approved hash="204,1,-86.36,55.88,J1,VBUS,,,,"/>
+<approved hash="113,1,50.5739,72.4513,SERVO1,,,,,"/>
+<approved hash="113,1,69.6239,72.4513,SERVO2,,,,,"/>
+<approved hash="113,1,52.8894,19.2761,BUTTON_PAD,,,,,"/>
 <approved hash="113,1,30.8017,-11.43,LED2,,,,,"/>
 <approved hash="113,1,39.6917,-11.43,LED1,,,,,"/>
+<approved hash="113,1,18.946,59.586,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
