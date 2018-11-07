@@ -1765,37 +1765,6 @@ by exp-lbrs.ulp</description>
 </package3d>
 </packages3d>
 </library>
-<library name="ElectrolyticCap">
-<packages>
-<package name="UD-5X5,4_NICHICON" urn="urn:adsk.eagle:footprint:22973/1" locally_modified="yes">
-<description>&lt;b&gt;ALUMINUM ELECTROLYTIC CAPACITORS&lt;/b&gt; UD Series 5 x 5.8 mm&lt;p&gt;
-Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
-<wire x1="-2.6" y1="2.6" x2="1.8" y2="2.6" width="0.1016" layer="51"/>
-<wire x1="1.8" y1="2.6" x2="2.6" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="2.6" y1="1.8" x2="2.6" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="2.6" y1="-1.8" x2="1.8" y2="-2.6" width="0.1016" layer="51"/>
-<wire x1="1.8" y1="-2.6" x2="-2.6" y2="-2.6" width="0.1016" layer="51"/>
-<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.1016" layer="51"/>
-<wire x1="-2.3" y1="0.85" x2="2.275" y2="0.9" width="0.1016" layer="21" curve="-137.986421"/>
-<wire x1="-2.6" y1="0.7" x2="-2.6" y2="2.6" width="0.1016" layer="21"/>
-<wire x1="-2.6" y1="2.6" x2="1.8" y2="2.6" width="0.1016" layer="21"/>
-<wire x1="1.8" y1="2.6" x2="2.6" y2="1.8" width="0.1016" layer="21"/>
-<wire x1="2.6" y1="-1.8" x2="1.8" y2="-2.6" width="0.1016" layer="21"/>
-<wire x1="1.8" y1="-2.6" x2="-2.6" y2="-2.6" width="0.1016" layer="21"/>
-<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="-0.7" width="0.1016" layer="21"/>
-<wire x1="2.3" y1="-0.85" x2="-2.275" y2="-0.9" width="0.1016" layer="21" curve="-137.986421"/>
-<circle x="0" y="0" radius="2.4501" width="0.1016" layer="51"/>
-<smd name="-" x="-1.65" y="0" dx="2.4" dy="1" layer="1"/>
-<smd name="+" x="1.65" y="0" dx="2.4" dy="1" layer="1"/>
-<text x="-2.54" y="3.175" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.016" layer="27">&gt;VALUE</text>
-<polygon width="0.1016" layer="51">
-<vertex x="-1.55" y="1.875" curve="100.118878"/>
-<vertex x="-1.55" y="-1.875"/>
-</polygon>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2158,7 +2127,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="SPICEPREFIX" value="C" x="2.5" y="-17" size="1.778" layer="27" display="off"/>
 <attribute name="VENDER" value="Arrow" x="2.5" y="-17" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C12" library="ElectrolyticCap" package="UD-5X5,4_NICHICON" value="10uF" x="-3.5" y="-15.5"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2358,12 +2326,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C5" pad="1"/>
-<contactref element="C12" pad="-"/>
 <wire x1="99.1132875" y1="58.03" x2="101.4167125" y2="58.03" width="0" layer="19" extent="1-1"/>
 <wire x1="1.1" y1="-4" x2="8.01" y2="4.34" width="0" layer="19" extent="1-1"/>
 <wire x1="1.1" y1="-10.5" x2="1.1" y2="-4" width="0" layer="19" extent="1-1"/>
 <wire x1="1.1" y1="-17" x2="1.1" y2="-10.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.15" y1="-15.5" x2="1.1" y2="-17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D+USB">
 <contactref element="R1" pad="1"/>
@@ -2878,8 +2844,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="103.5" y1="6" x2="101.845" y2="6" width="0.1524" layer="1"/>
 <wire x1="101.845" y1="6" x2="101.5" y2="5.655" width="0.1524" layer="1"/>
 <wire x1="131" y1="28.195" x2="131.23" y2="28.425" width="0.1524" layer="1"/>
-<contactref element="C12" pad="+"/>
-<wire x1="-1.85" y1="-15.5" x2="86.49" y2="4.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDBREAK">
 <contactref element="U4" pad="GNDBREAK"/>
