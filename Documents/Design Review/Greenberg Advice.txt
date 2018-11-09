@@ -1,0 +1,11 @@
+Questions for Andrew:
+•	USB Power pin
+o	Will it cause problems if it’s not connected?
+o	Can we get away with not using it? Just using power from the DC barrel jack
+•	Enabling internal pull-up resistors on digital pins
+
+Advice from Andrew
+•	Get something you don’t have to wire up for ISP programming – get a cord designed for the 2x3 pin header
+•	For I2C, 4.7k for pull up resistor is standard.
+•	Want GND plane on both sides
+•	Stitching vias – add via, name it GND, then copy and paste around.
