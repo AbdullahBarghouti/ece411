@@ -12336,11 +12336,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </segment>
 <segment>
 <pinref part="BUTTON_PAD" gate="A" pin="5"/>
-<wire x1="55.88" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="12.7" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="10.16" x2="48.26" y2="8.89" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="8.89" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="7.62" x2="48.26" y2="3.81" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="12.7" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="10.16" x2="43.18" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="8.89" x2="48.26" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="8.89" x2="48.26" y2="3.81" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>

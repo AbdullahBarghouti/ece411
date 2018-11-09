@@ -12043,6 +12043,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </part>
 <part name="C12" library="ElectrolyticCap" deviceset="UWT1V100MCL1GB" device="" value="10uF"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="COST" value=""/>
+<attribute name="PART_NO" value=""/>
+<attribute name="VENDER" value="Arrow"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -12108,12 +12119,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="GND13" gate="1" x="-66.04" y="57.15" smashed="yes">
 <attribute name="VALUE" x="-68.58" y="54.61" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="-59.69" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="-59.944" y="74.549" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-52.324" y="74.549" size="1.778" layer="96" rot="R180"/>
-<attribute name="COST" x="-59.69" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="-59.69" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="VENDER" x="-59.69" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C2" gate="G$1" x="-62.23" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-62.484" y="73.279" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-54.864" y="73.279" size="1.778" layer="96" rot="R180"/>
+<attribute name="COST" x="-62.23" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="-62.23" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VENDER" x="-62.23" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="-72.39" y="53.34" smashed="yes">
 <attribute name="NAME" x="-76.2" y="54.8386" size="1.778" layer="95"/>
@@ -12248,30 +12259,37 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="TP_LED1" gate="G$1" x="41.91" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="43.18" y="11.43" size="1.778" layer="95"/>
 </instance>
-<instance part="C3" gate="G$1" x="-50.8" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="-51.054" y="70.739" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-43.434" y="70.739" size="1.778" layer="96" rot="R180"/>
-<attribute name="COST" x="-50.8" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="-50.8" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="VENDER" x="-50.8" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C3" gate="G$1" x="-54.61" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="-54.864" y="70.739" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-47.244" y="70.739" size="1.778" layer="96" rot="R180"/>
+<attribute name="COST" x="-54.61" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="-54.61" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VENDER" x="-54.61" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C4" gate="G$1" x="-43.18" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="-43.434" y="65.659" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-35.814" y="65.659" size="1.778" layer="96" rot="R180"/>
-<attribute name="COST" x="-43.18" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="-43.18" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="VENDER" x="-43.18" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C4" gate="G$1" x="-38.1" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="-38.354" y="65.659" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-30.734" y="65.659" size="1.778" layer="96" rot="R180"/>
+<attribute name="COST" x="-38.1" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="-38.1" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VENDER" x="-38.1" y="63.5" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C5" gate="G$1" x="-34.29" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="-34.544" y="59.309" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-26.924" y="59.309" size="1.778" layer="96" rot="R180"/>
-<attribute name="COST" x="-34.29" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="-34.29" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="VENDER" x="-34.29" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C5" gate="G$1" x="-33.02" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="-33.274" y="59.309" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-25.654" y="59.309" size="1.778" layer="96" rot="R180"/>
+<attribute name="COST" x="-33.02" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="-33.02" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VENDER" x="-33.02" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C12" gate="G$1" x="17.78" y="115.57"/>
 <instance part="GND16" gate="1" x="17.78" y="106.68" smashed="yes">
 <attribute name="VALUE" x="15.24" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="C13" gate="G$1" x="-45.72" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-45.974" y="68.199" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-38.354" y="68.199" size="1.778" layer="96" rot="R180"/>
+<attribute name="COST" x="-45.72" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="-45.72" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VENDER" x="-45.72" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -12359,21 +12377,25 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-62.23" y1="71.12" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-64.77" y1="71.12" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="71.12" x2="-66.04" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="68.58" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="68.58" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="66.04" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="63.5" x2="-66.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="60.96" x2="-66.04" y2="59.69" width="0.1524" layer="91"/>
-<wire x1="-36.83" y1="60.96" x2="-66.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="60.96" x2="-66.04" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-66.04" y="60.96"/>
-<wire x1="-45.72" y1="63.5" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="63.5" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-66.04" y="63.5"/>
-<wire x1="-53.34" y1="68.58" x2="-66.04" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-57.15" y1="68.58" x2="-66.04" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-66.04" y="68.58"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="66.04" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-66.04" y="66.04"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -12503,17 +12525,22 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-26.67" y1="63.5" x2="-26.67" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="60.96" x2="-21.59" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-54.61" y1="71.12" x2="-26.67" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-57.15" y1="71.12" x2="-26.67" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-26.67" y="71.12"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="-26.67" y1="71.12" x2="-26.67" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="68.58" x2="-26.67" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="63.5" x2="-26.67" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-29.21" y1="60.96" x2="-26.67" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="68.58" x2="-26.67" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="63.5" x2="-26.67" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="60.96" x2="-26.67" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-26.67" y="60.96"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="UVCC"/>
+<wire x1="-21.59" y1="66.04" x2="-26.67" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-26.67" y="66.04"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="66.04" x2="-26.67" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>

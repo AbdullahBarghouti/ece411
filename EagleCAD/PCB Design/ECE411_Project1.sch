@@ -12060,7 +12060,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <plain>
 <text x="58.42" y="125.73" size="1.778" layer="96" align="bottom-center">LDO Regulator 5V 0.5A</text>
 <text x="58.42" y="99.06" size="1.778" layer="96" align="bottom-center">LDO Regulator 5V 3A</text>
-<text x="54.61" y="-24.13" size="3.81" layer="106">ECE411 Team 14
+<text x="54.61" y="-24.13" size="3.81" layer="94">ECE411 Team 14
 Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </plain>
 <instances>
