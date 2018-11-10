@@ -84,7 +84,7 @@
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="yes"/>
-<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
@@ -12060,6 +12060,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <plain>
 <text x="58.42" y="125.73" size="1.778" layer="96" align="bottom-center">LDO Regulator 5V 0.5A</text>
 <text x="58.42" y="99.06" size="1.778" layer="96" align="bottom-center">LDO Regulator 5V 3A</text>
+<text x="54.61" y="-24.13" size="3.81" layer="106">ECE411 Team 14
+Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="1.27" y="40.64" smashed="yes">
@@ -12783,6 +12785,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
