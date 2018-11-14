@@ -11936,7 +11936,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
+<part name="ATMEGA32U4" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11982,10 +11982,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </part>
 <part name="SW_RST" library="Push_Button" deviceset="FSM2JSMLTR" device=""/>
 <part name="MICRO_USB" library="USB_Micro_and_AVRISP" deviceset="0473460001_USBMICRO" device=""/>
-<part name="ISP1" library="USB_Micro_and_AVRISP" deviceset="AVRISP" device="-6"/>
-<part name="XTAL1" library="Xtals" deviceset="ATS160SM-1" device="" value="16MHz"/>
-<part name="U2" library="Regulators" deviceset="MIC29310-5.0WU" device=""/>
-<part name="U3" library="Regulators" deviceset="NCP5501DT50RKG" device=""/>
+<part name="ISP" library="USB_Micro_and_AVRISP" deviceset="AVRISP" device="-6"/>
+<part name="16MHZ_XTAL" library="Xtals" deviceset="ATS160SM-1" device="" value="16MHz"/>
+<part name="MIC29310" library="Regulators" deviceset="MIC29310-5.0WU" device=""/>
+<part name="NCP5501DT50RKG" library="Regulators" deviceset="NCP5501DT50RKG" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="">
@@ -11998,7 +11998,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22p"/>
-<part name="U4" library="DCBARREL_2.1MM" deviceset="DCJACK_2.1MM_PTH" device=""/>
+<part name="DCBARREL" library="DCBARREL_2.1MM" deviceset="DCJACK_2.1MM_PTH" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="TP_PWM1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:5829471/1"/>
 <part name="TP_PWM2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:5829471/1"/>
@@ -12064,7 +12064,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="1.27" y="40.64" smashed="yes">
+<instance part="ATMEGA32U4" gate="G$1" x="1.27" y="40.64" smashed="yes">
 <attribute name="NAME" x="-15.24" y="5.08" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-3.81" y="86.36" size="1.778" layer="96"/>
 </instance>
@@ -12175,18 +12175,18 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <attribute name="NAME" x="-99.06" y="59.436" size="1.27" layer="95"/>
 <attribute name="VALUE" x="-99.06" y="40.64" size="1.27" layer="96"/>
 </instance>
-<instance part="ISP1" gate="G$1" x="78.74" y="26.67" smashed="yes">
+<instance part="ISP" gate="G$1" x="78.74" y="26.67" smashed="yes">
 <attribute name="NAME" x="76.2" y="19.05" size="1.778" layer="95"/>
 </instance>
-<instance part="XTAL1" gate="G$1" x="-26.67" y="34.29" smashed="yes" rot="R90">
+<instance part="16MHZ_XTAL" gate="G$1" x="-26.67" y="34.29" smashed="yes" rot="R90">
 <attribute name="NAME" x="-28.956" y="31.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-24.13" y="36.83" size="1.778" layer="96" rot="R180" align="bottom-right"/>
 </instance>
-<instance part="U2" gate="G$1" x="58.42" y="92.71" smashed="yes">
+<instance part="MIC29310" gate="G$1" x="58.42" y="92.71" smashed="yes">
 <attribute name="NAME" x="60.96" y="85.09" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="96.52" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U3" gate="G$1" x="58.42" y="118.11" smashed="yes">
+<instance part="NCP5501DT50RKG" gate="G$1" x="58.42" y="118.11" smashed="yes">
 <attribute name="NAME" x="60.96" y="110.49" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="121.92" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -12227,7 +12227,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <attribute name="NAME" x="-34.544" y="32.639" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-32.004" y="27.559" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U4" gate="G$1" x="0" y="115.57" smashed="yes">
+<instance part="DCBARREL" gate="G$1" x="0" y="115.57" smashed="yes">
 <attribute name="NAME" x="-5.08" y="120.65" size="1.27" layer="95"/>
 <attribute name="VALUE" x="-5.08" y="110.49" size="1.27" layer="96"/>
 </instance>
@@ -12299,23 +12299,23 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="GND"/>
 <wire x1="-21.59" y1="17.78" x2="-31.75" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="17.78" x2="-31.75" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="GND1"/>
 <wire x1="-31.75" y1="15.24" x2="-31.75" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="12.7" x2="-31.75" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="10.16" x2="-31.75" y2="1.27" width="0.1524" layer="91"/>
 <wire x1="-21.59" y1="15.24" x2="-31.75" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-31.75" y="15.24"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="GND2"/>
 <wire x1="-21.59" y1="12.7" x2="-31.75" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-31.75" y="12.7"/>
-<pinref part="U$1" gate="G$1" pin="GND3"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="GND3"/>
 <wire x1="-21.59" y1="10.16" x2="-31.75" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-31.75" y="10.16"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="UGND"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="UGND"/>
 <wire x1="-21.59" y1="22.86" x2="-31.75" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="22.86" x2="-31.75" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-31.75" y="17.78"/>
@@ -12352,7 +12352,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="93.98" y1="24.13" x2="97.79" y2="24.13" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="24.13" x2="97.79" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="ISP1" gate="G$1" pin="GND"/>
+<pinref part="ISP" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="BUTTON_PAD" gate="A" pin="5"/>
@@ -12405,7 +12405,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="39.37" y1="-10.16" x2="39.37" y2="-8.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="MIC29310" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="85.09" x2="58.42" y2="85.09" width="0.1524" layer="91"/>
@@ -12414,7 +12414,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="58.42" y1="85.09" x2="67.31" y2="85.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="NCP5501DT50RKG" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="110.49" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -12427,8 +12427,8 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="2.54" y1="113.03" x2="6.35" y2="113.03" width="0.1524" layer="91"/>
 <wire x1="6.35" y1="113.03" x2="6.35" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<pinref part="U4" gate="G$1" pin="GNDBREAK"/>
+<pinref part="DCBARREL" gate="G$1" pin="GND"/>
+<pinref part="DCBARREL" gate="G$1" pin="GNDBREAK"/>
 <wire x1="2.54" y1="115.57" x2="6.35" y2="115.57" width="0.1524" layer="91"/>
 <wire x1="6.35" y1="115.57" x2="6.35" y2="113.03" width="0.1524" layer="91"/>
 <junction x="6.35" y="113.03"/>
@@ -12448,7 +12448,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="D+MCU" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D+"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="D+"/>
 <wire x1="-67.31" y1="53.34" x2="-50.8" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="TP_D+" gate="G$1" pin="TP"/>
@@ -12468,7 +12468,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="-54.61" y1="50.8" x2="-50.8" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="50.8" x2="-29.21" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="50.8" x2="-29.21" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D-"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="D-"/>
 <wire x1="-29.21" y1="55.88" x2="-21.59" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="TP_D-" gate="G$1" pin="TP"/>
@@ -12477,7 +12477,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="UCAP" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UCAP"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="UCAP"/>
 <wire x1="-21.59" y1="48.26" x2="-30.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="48.26" x2="-45.72" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -12485,7 +12485,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="26.67" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="10.16" x2="30.48" y2="8.89" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="8.89" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
@@ -12515,13 +12515,13 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="AVCC1"/>
-<pinref part="U$1" gate="G$1" pin="AVCC"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="AVCC1"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="AVCC"/>
 <wire x1="-21.59" y1="63.5" x2="-26.67" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="VCC"/>
 <wire x1="-21.59" y1="71.12" x2="-26.67" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="71.12" x2="-26.67" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCC1"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="VCC1"/>
 <wire x1="-21.59" y1="68.58" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="68.58" x2="-26.67" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-26.67" y="68.58"/>
@@ -12542,14 +12542,14 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="UVCC"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="UVCC"/>
 <wire x1="-21.59" y1="66.04" x2="-26.67" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-26.67" y="66.04"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="66.04" x2="-26.67" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
+<pinref part="NCP5501DT50RKG" gate="G$1" pin="OUT"/>
 <wire x1="66.04" y1="118.11" x2="67.31" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="118.11" x2="81.28" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="118.11" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
@@ -12560,7 +12560,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <junction x="81.28" y="118.11"/>
 </segment>
 <segment>
-<pinref part="ISP1" gate="G$1" pin="VCC"/>
+<pinref part="ISP" gate="G$1" pin="VCC"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="93.98" y1="29.21" x2="97.79" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="97.79" y1="29.21" x2="97.79" y2="35.56" width="0.1524" layer="91"/>
@@ -12568,7 +12568,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="PWM2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
 <wire x1="26.67" y1="45.72" x2="49.53" y2="45.72" width="0.1524" layer="91"/>
 <label x="67.31" y="66.04" size="1.778" layer="95" rot="R180"/>
 <pinref part="SERVO2" gate="A" pin="1"/>
@@ -12581,7 +12581,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="PWM1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
 <wire x1="26.67" y1="48.26" x2="31.75" y2="48.26" width="0.1524" layer="91"/>
 <label x="48.26" y="66.04" size="1.778" layer="95" rot="R180"/>
 <pinref part="SERVO1" gate="A" pin="1"/>
@@ -12593,7 +12593,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD1(INT1/SDA)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD1(INT1/SDA)"/>
 <wire x1="39.37" y1="10.16" x2="39.37" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="12.7" x2="26.67" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -12603,7 +12603,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD2(INT2/RXD1)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD2(INT2/RXD1)"/>
 <wire x1="26.67" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="BUTTON_PAD" gate="A" pin="4"/>
 <wire x1="55.88" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
@@ -12611,7 +12611,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD3(INT3/TXD1)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD3(INT3/TXD1)"/>
 <wire x1="26.67" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="BUTTON_PAD" gate="A" pin="3"/>
 <wire x1="55.88" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
@@ -12619,7 +12619,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD4(ICP1/ADC8)"/>
 <wire x1="26.67" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="BUTTON_PAD" gate="A" pin="2"/>
 <wire x1="55.88" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
@@ -12627,7 +12627,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD5(XCK/CTS)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD5(XCK/CTS)"/>
 <wire x1="26.67" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="BUTTON_PAD" gate="A" pin="1"/>
 <wire x1="55.88" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
@@ -12639,38 +12639,38 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="102.87" y1="26.67" x2="102.87" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="102.87" y1="43.18" x2="52.07" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="52.07" y1="43.18" x2="52.07" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PB2(PDI/MOSI)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PB2(PDI/MOSI)"/>
 <wire x1="52.07" y1="38.1" x2="26.67" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="ISP1" gate="G$1" pin="MOSI"/>
+<pinref part="ISP" gate="G$1" pin="MOSI"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <wire x1="66.04" y1="29.21" x2="64.77" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="29.21" x2="64.77" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PB3(PDO/MISO)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PB3(PDO/MISO)"/>
 <wire x1="64.77" y1="40.64" x2="26.67" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="ISP1" gate="G$1" pin="MISO"/>
+<pinref part="ISP" gate="G$1" pin="MISO"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <wire x1="66.04" y1="26.67" x2="62.23" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PB1(SCK)"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PB1(SCK)"/>
 <wire x1="62.23" y1="26.67" x2="62.23" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="62.23" y1="35.56" x2="26.67" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="ISP1" gate="G$1" pin="SCK"/>
+<pinref part="ISP" gate="G$1" pin="SCK"/>
 </segment>
 </net>
 <net name="/RST" class="0">
 <segment>
 <wire x1="66.04" y1="24.13" x2="62.23" y2="24.13" width="0.1524" layer="91"/>
-<pinref part="ISP1" gate="G$1" pin="RST"/>
+<pinref part="ISP" gate="G$1" pin="RST"/>
 <wire x1="62.23" y1="24.13" x2="62.23" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="62.23" y1="7.62" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="7.62" x2="109.22" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="130.81" x2="-15.24" y2="130.81" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="/RESET"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="/RESET"/>
 <wire x1="-35.56" y1="83.82" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="83.82" x2="-21.59" y2="83.82" width="0.1524" layer="91"/>
@@ -12697,7 +12697,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="71.12" y1="58.42" x2="82.55" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="82.55" y1="58.42" x2="82.55" y2="92.71" width="0.1524" layer="91"/>
 <junction x="71.12" y="58.42"/>
-<pinref part="U2" gate="G$1" pin="OUT"/>
+<pinref part="MIC29310" gate="G$1" pin="OUT"/>
 <label x="72.39" y="55.88" size="1.778" layer="95"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="82.55" y1="92.71" x2="67.31" y2="92.71" width="0.1524" layer="91"/>
@@ -12712,10 +12712,10 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="-29.21" y1="29.21" x2="-26.67" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="29.21" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="29.21" x2="-30.48" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="XTAL2"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="XTAL2"/>
 <wire x1="-21.59" y1="30.48" x2="-24.13" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-24.13" y1="30.48" x2="-24.13" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="XTAL1" gate="G$1" pin="1"/>
+<pinref part="16MHZ_XTAL" gate="G$1" pin="1"/>
 <junction x="-26.67" y="29.21"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
@@ -12725,19 +12725,19 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="-24.13" y1="39.37" x2="-26.67" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="39.37" x2="-29.21" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="39.37" x2="-30.48" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="XTAL1"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="XTAL1"/>
 <wire x1="-21.59" y1="38.1" x2="-24.13" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-24.13" y1="38.1" x2="-24.13" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="XTAL1" gate="G$1" pin="2"/>
+<pinref part="16MHZ_XTAL" gate="G$1" pin="2"/>
 <junction x="-26.67" y="39.37"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="UNREG_PWR" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="IN"/>
+<pinref part="NCP5501DT50RKG" gate="G$1" pin="IN"/>
 <wire x1="2.54" y1="118.11" x2="17.78" y2="118.11" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
+<pinref part="MIC29310" gate="G$1" pin="IN"/>
 <wire x1="17.78" y1="118.11" x2="43.18" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="118.11" x2="48.26" y2="118.11" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="118.11" x2="50.8" y2="118.11" width="0.1524" layer="91"/>
@@ -12749,7 +12749,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <junction x="48.26" y="92.71"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="48.26" y="118.11"/>
-<pinref part="U4" gate="G$1" pin="PWR"/>
+<pinref part="DCBARREL" gate="G$1" pin="PWR"/>
 <pinref part="C12" gate="G$1" pin="+"/>
 <junction x="17.78" y="118.11"/>
 </segment>
@@ -12763,7 +12763,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="-71.12" y1="74.93" x2="-34.29" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="74.93" x2="-33.02" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="74.93" x2="-33.02" y2="77.47" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VBUS"/>
+<pinref part="ATMEGA32U4" gate="G$1" pin="VBUS"/>
 <wire x1="-33.02" y1="77.47" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="78.74" x2="-21.59" y2="78.74" width="0.1524" layer="91"/>
 <label x="-78.74" y="57.15" size="1.778" layer="95"/>
