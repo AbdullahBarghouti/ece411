@@ -12481,7 +12481,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="CHIP_LED2" class="0">
 <segment>
 <wire x1="34.29" y1="62.23" x2="33.02" y2="62.23" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -12589,7 +12589,7 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <junction x="59.69" y="48.26"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="CHIP_LED1" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="TP_LED1" gate="G$1" pin="TP"/>
@@ -12750,20 +12750,6 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <wire x1="38.1" y1="25.4" x2="26.67" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="BUTTON_PAD" gate="A" pin="3"/>
-<pinref part="ATMEGA32U4" gate="G$1" pin="PD5(XCK/CTS)"/>
-<wire x1="38.1" y1="22.86" x2="26.67" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="BUTTON_PAD" gate="A" pin="4"/>
-<pinref part="ATMEGA32U4" gate="G$1" pin="PD4(ICP1/ADC8)"/>
-<wire x1="38.1" y1="20.32" x2="26.67" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="BUTTON_PAD" gate="A" pin="5"/>
@@ -12790,6 +12776,27 @@ Servo-Powered Pan &amp; Tilt Camera Mount</text>
 <pinref part="BUTTON_PAD" gate="A" pin="8"/>
 <pinref part="ATMEGA32U4" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="38.1" y1="10.16" x2="26.67" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<wire x1="26.67" y1="20.32" x2="29.21" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="29.21" y1="20.32" x2="29.21" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="BUTTON_PAD" gate="A" pin="3"/>
+<wire x1="29.21" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="ATMEGA32U4" gate="G$1" pin="PD5(XCK/CTS)"/>
+<wire x1="26.67" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="21.59" x2="30.48" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="21.59" x2="33.02" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="21.59" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="BUTTON_PAD" gate="A" pin="4"/>
+<wire x1="33.02" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
