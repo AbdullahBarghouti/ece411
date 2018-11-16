@@ -1,0 +1,26 @@
+ATMega32u4 Fuse Bits
+
+~low  byte 0x5E~
+CKSEL [3:0] = 1110
+CKDIV8 = 0
+CKOUT = 1
+SUT1 = 0
+SUT0 = 1
+
+~extended byte 0xF3~
+HWBE = 0
+BODLEVEL [2:0] = 011
+
+~high byte 0x99~
+OCDEN = 1
+JTAGEN = 0
+SPIEN = 0
+WDTON = 1
+EESAVE = 1
+BOOTSZ [1:0] = 00
+BOOTRST = 1
+
+~AVRDUDE arguments~
+-U lfuse:w:0x5e:m 
+-U hfuse:w:0x99:m 
+-U efuse:w:0xf3:m 
