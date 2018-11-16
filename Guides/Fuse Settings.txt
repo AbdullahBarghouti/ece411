@@ -24,3 +24,10 @@ BOOTRST = 1
 -U lfuse:w:0x5e:m 
 -U hfuse:w:0x99:m 
 -U efuse:w:0xf3:m 
+
+avrdude
+https://www.ladyada.net/learn/avr/avrdude.html
+-p m32u4
+-P usb
+
+avrdude -c arduino -p m32u4 -P com9 -U lfuse:w:0x5e:m -U hfuse:w:0x99:m -U efuse:w:0xf3:m
