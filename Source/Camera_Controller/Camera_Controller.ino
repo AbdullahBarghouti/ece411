@@ -10,21 +10,21 @@
  * LED1 0   0   1   1
  * LED2 0   1   0   1
  */
-LED led1 = LED(18);
-LED led2 = LED(19);
+LED led1 = LED(2);
+LED led2 = LED(3);
 
-const int button1 = 20;
-const int button2 = 21;
-const int button3 = 25;
-const int button4 = 22;
+const int button1 = 5;
+const int button2 = 4;
+const int button3 = 7;
+const int button4 = 6;
 
-const int pan_pin = 30;
-const int tilt_pin = 29;
+const int pan_pin = 9;
+const int tilt_pin = 10;
 //Servo min/max defined here in microseconds
-const int tilt_max = 2400;
-const int tilt_min = 500;
-const int pan_max = 2400;
-const int pan_min = 500;
+const int tilt_max = 2000;
+const int tilt_min = 1000;
+const int pan_max = 2000;
+const int pan_min = 1000;
 
 //create 2 servo objects
 Servo pan_servo;
@@ -40,13 +40,14 @@ int tilt_value;
 void setup() {
   //buttons 22, 25, 21, 20
   //needs min/max set for servos 
+  Serial.begin(9600);
   pan_servo.attach(pan_pin, pan_min, pan_max);
   pan_servo.attach(tilt_pin, tilt_min, tilt_max);
   //Set button pins as inputs
-  pinMode(button1, INPUT);
-  pinMode(button2, INPUT);
-  pinMode(button3, INPUT);
-  pinMode(button4, INPUT);
+  pinMode(button1, INPUT_PULLUP);
+  pinMode(button2, INPUT_PULLUP);
+  pinMode(button3, INPUT_PULLUP);
+  pinMode(button4, INPUT_PULLUP);
   led1.blink(2000);
   led2.blink(2000);
 }
@@ -54,11 +55,9 @@ void setup() {
 //TBD might want to write to servos in microseconds
 void loop() {
   //poll for button press, one direction at a time
-  //TBD if buttons are default high or low
   //Rest of tests to be written
   if(!tilt_up){
-    tilt_value = tilt_servo.read();
-    //delay(10) should be replaced with something eventually
+    Serial.print("button 1");
     if(tilt_value >= 180)
       delay(10);
     else{
@@ -67,11 +66,42 @@ void loop() {
       led1.off();
       led2.off();  
     }
+  } 
+   if(!tilt_down){
+    Serial.print("button 2");
+    if(tilt_value <= 0)
+      delay(10);
+    else{
+      tilt_value = tilt_value - 1;
+      tilt_servo.write(tilt_value); 
+      led1.off();
+      led2.on();  
+    }
+  }
+   if(!pan_left){
+    if(pan <= 0)
+      delay(10);
+    else{
+      pan_value = pan_value + 1;
+      pan_servo.write(pan_value); 
+      led1.on();
+      led2.off();  
+    }
+  }
+   if(!pan_right){
+    if(pan_value >= 180)
+      delay(10);
+    else{
+      pan_value = pan_value - 1;
+      pan_servo.write(pan_value); 
+      led1.on();
+      led2.on();  
+    }
   }
 
   tilt_up = digitalRead(button1);
   tilt_down = digitalRead(button2);
   pan_left = digitalRead(button3);
   pan_right = digitalRead(button4);
-  delay(50);
+  delay(100);
 }
