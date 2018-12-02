@@ -10,13 +10,13 @@
  * LED1 0   0   1   1
  * LED2 0   1   0   1
  */
-LED led1 = LED(2);
-LED led2 = LED(3);
+LED led1 = LED(5);
+LED led2 = LED(13);
 
-const int button1 = 5;
-const int button2 = 4;
-const int button3 = 7;
-const int button4 = 6;
+const int button1 = 2;
+const int button2 = 3;
+const int button3 = 1;
+const int button4 = 0;
 
 const int pan_pin = 9;
 const int tilt_pin = 10;
@@ -34,15 +34,15 @@ int tilt_up = 1;
 int tilt_down = 1;
 int pan_left = 1;
 int pan_right = 1;
-int pan_value;
-int tilt_value;
+int pan_value = 90;
+int tilt_value = 90;
 
 void setup() {
   //buttons 22, 25, 21, 20
   //needs min/max set for servos 
   Serial.begin(9600);
-  pan_servo.attach(pan_pin, pan_min, pan_max);
-  pan_servo.attach(tilt_pin, tilt_min, tilt_max);
+  pan_servo.attach(pan_pin);
+  tilt_servo.attach(tilt_pin);
   //Set button pins as inputs
   pinMode(button1, INPUT_PULLUP);
   pinMode(button2, INPUT_PULLUP);
@@ -79,7 +79,8 @@ void loop() {
     }
   }
    if(!pan_left){
-    if(pan <= 0)
+    Serial.print("button 3");
+    if(pan_value <= 0)
       delay(10);
     else{
       pan_value = pan_value + 1;
@@ -89,6 +90,7 @@ void loop() {
     }
   }
    if(!pan_right){
+    Serial.print("button 4");
     if(pan_value >= 180)
       delay(10);
     else{
@@ -103,5 +105,5 @@ void loop() {
   tilt_down = digitalRead(button2);
   pan_left = digitalRead(button3);
   pan_right = digitalRead(button4);
-  delay(100);
+  delay(50);
 }
