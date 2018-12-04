@@ -58,7 +58,7 @@ void loop() {
   //Rest of tests to be written
   if(!tilt_up){
     Serial.print("button 1");
-    if(tilt_value >= 180)
+    if(tilt_value >= 120)
       delay(10);
     else{
       tilt_value = tilt_value + 1;
@@ -80,7 +80,7 @@ void loop() {
   }
    if(!pan_left){
     Serial.print("button 3");
-    if(pan_value <= 0)
+    if(pan_value >= 180)
       delay(10);
     else{
       pan_value = pan_value + 1;
@@ -91,7 +91,7 @@ void loop() {
   }
    if(!pan_right){
     Serial.print("button 4");
-    if(pan_value >= 180)
+    if(pan_value <= 0)
       delay(10);
     else{
       pan_value = pan_value - 1;
