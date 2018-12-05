@@ -58,7 +58,7 @@ void loop() {
   //Rest of tests to be written
   if(!tilt_up){
     Serial.print("button 1");
-    if(tilt_value >= 120)
+    if(tilt_value >= 130)
       delay(10);
     else{
       tilt_value = tilt_value + 1;
@@ -69,18 +69,18 @@ void loop() {
   } 
    if(!tilt_down){
     Serial.print("button 2");
-    if(tilt_value <= 0)
+    if(tilt_value <= 43)
       delay(10);
     else{
       tilt_value = tilt_value - 1;
       tilt_servo.write(tilt_value); 
       led1.off();
-      led2.on();  
+      led2.on();
     }
   }
    if(!pan_left){
     Serial.print("button 3");
-    if(pan_value >= 180)
+    if(pan_value >= 135)
       delay(10);
     else{
       pan_value = pan_value + 1;
@@ -91,7 +91,7 @@ void loop() {
   }
    if(!pan_right){
     Serial.print("button 4");
-    if(pan_value <= 0)
+    if(pan_value <= 50)
       delay(10);
     else{
       pan_value = pan_value - 1;
@@ -105,5 +105,5 @@ void loop() {
   tilt_down = digitalRead(button2);
   pan_left = digitalRead(button3);
   pan_right = digitalRead(button4);
-  delay(50);
+  delay(25);
 }
